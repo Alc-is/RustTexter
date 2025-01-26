@@ -56,7 +56,7 @@ fn main() -> Result<(), String> {
     let video_subsystem = sdl_context.video()?;
 
     let window = video_subsystem
-        .window("Texter", 800, 600)
+        .window("Texter", 800, 600) // window name and dimensions
         .position_centered()
         .build()
         .map_err(|e| e.to_string())?;
