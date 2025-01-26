@@ -66,7 +66,7 @@ fn main() -> Result<(), String> {
     // Create the texture creator BEFORE calling render_text
     let texture_creator = canvas.texture_creator();
 
-    let font_data: &[u8] = include_bytes!("../assets/FiraCode-Bold.ttf");
+    let font_data: &[u8] = include_bytes!("../assets/FiraCode-Bold.ttf"); // font used from within the project's "assets" directory
     let font = Font::try_from_bytes(font_data).expect("Error constructing Font");
 
     let text = "Hello, alkis!";
