@@ -69,7 +69,7 @@ fn main() -> Result<(), String> {
     let font_data: &[u8] = include_bytes!("../assets/FiraCode-Bold.ttf"); // font used from within the project's "assets" directory
     let font = Font::try_from_bytes(font_data).expect("Error constructing Font");
 
-    let text = "Hello, alkis!";
+    let text = "Hello, Friends!";          // text to be displayed
     let scale = Scale::uniform(32.0);
     let color = Color::RGB(255, 255, 255); // text color
 
