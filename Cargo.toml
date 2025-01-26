@@ -1,0 +1,8 @@
+[package]
+name = "texter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sdl2 = { version = "0.37", features = ["ttf"] } # Or your sdl2 version, remove "ttf" if using rusttype
+rusttype = "0.9.3" # Add rusttype
